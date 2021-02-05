@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import { NodeMetrics } from "./components/NodeMetrics";
+import { ClusterNodeMetrics } from "./components/ClusterNodeMetrics";
 
 function App() {
   return (
     <div className="App">
-      <NodeMetrics />
+      <ClusterNodeMetrics />
     </div>
   );
 }

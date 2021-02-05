@@ -11,7 +11,6 @@
   border-bottom: 10px solid #080e33;
   margin: 10px;
 }
-
 .totalContainer {
   grid-row: 1 / 4;
   grid-column-start: 3;
@@ -23,20 +22,20 @@
   text-align: start;
 }
 
-h1 {
+.mainContainer h1 {
   font-size: 1.2rem;
   color: #080e33;
   font-weight: normal;
   margin: 0;
 }
 
-h2 {
+.mainContainer h2 {
   font-size: 0.8rem;
   color: #a19d9b;
   font-weight: normal;
   margin: 0;
 }
 
-.totalCount {
+.totalContainer h1 {
   font-size: 4rem;
 }

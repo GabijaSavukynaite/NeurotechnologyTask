@@ -1,0 +1,4 @@
+{
+  "packages": ["server", "client", "gold-prices-widget"],
+  "version": "1.0.0"
+}

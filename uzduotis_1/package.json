@@ -1,0 +1,14 @@
+{
+  "name": "uzduotis_1",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "start": "lerna run start --parallel"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}

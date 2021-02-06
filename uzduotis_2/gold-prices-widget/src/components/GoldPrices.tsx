@@ -9,26 +9,26 @@ export const GoldPrices = () => {
   const [loadingData, setLoadingData] = useState(false);
 
   useEffect(() => {
-    // const intervalId = setInterval(() => {
-    setLoadingData(true);
-    fetch("http://localhost:8080/goldPrices")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Could not fetch data");
-        }
-        return response.json();
-      })
-      .then((fetchedData) => {
-        if (fetchDataError) {
-          setFetchDataError(false);
-        }
-        setData(fetchedData);
-      })
-      .catch(() => setFetchDataError(true))
-      .finally(() => setLoadingData(false));
-    // }, 1000);
+    const intervalId = setInterval(() => {
+      setLoadingData(true);
+      fetch("http://localhost:8080/goldPrices")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Could not fetch data");
+          }
+          return response.json();
+        })
+        .then((fetchedData) => {
+          if (fetchDataError) {
+            setFetchDataError(false);
+          }
+          setData(fetchedData);
+        })
+        .catch(() => setFetchDataError(true))
+        .finally(() => setLoadingData(false));
+    }, 1000);
 
-    // return () => clearInterval(intervalId);
+    return () => clearInterval(intervalId);
   }, []);
 
   return (

@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "react-app-rewired": "^2.1.8"
+    "react-app-rewired": "^2.1.8",
+    "serve": "^11.3.2"
   }
 }
